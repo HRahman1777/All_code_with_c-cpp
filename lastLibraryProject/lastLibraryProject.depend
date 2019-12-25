@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1533351412 source:c:\users\hp\documents\code\lastlibraryproject\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
