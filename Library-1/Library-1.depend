@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1532611885 source:c:\users\hp\documents\code\library-1\main.c
-	<stdio.h>
-	<string.h>
-	<ctype.h>
-

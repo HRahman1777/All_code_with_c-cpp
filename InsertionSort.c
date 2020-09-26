@@ -4,7 +4,7 @@ int main()
 {
     int n, array[1000], c, d, t;
 
-    printf("Enter number of elements\n");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
     printf("Enter %d integers\n", n);

@@ -1,19 +1,12 @@
 #include<stdio.h>
 #include<string.h>
-int main()
+
+int main(void)
 {
-    char string[100];
-    int c = 0, count[50];
-    gets(string);
-    for(string[c] = 0; string[c] != '\0' ; string[c]++)
-    {
-        if(string[c] >= 'a' && string[c] <= 'z')
-        {
-            count[string[c] - 'a' ]++;
+    char c = 250;
+    c += 8;
 
-        printf("%c\n", count[c]);
-        }
+    printf("%c %d", c, c);
 
-    }
     return 0;
 }
