@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void lC(FILE *readF)
+{
+    char c;
+    while((c=fgetc(readF))!=EOF)
+    {
+
+        if(c=='\n')
+            return;
+    }
+}

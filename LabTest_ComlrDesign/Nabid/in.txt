@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void lC(FILE *readF)
+{
+//this is line comnt
+    char c;
+    while((c=fgetc(readF))!=EOF)
+    {
+/*this is block comment
+new block line
+*/
+        if(c=='\n')
+            return;
+    }
+}
