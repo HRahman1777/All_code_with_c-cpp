@@ -1,0 +1,466 @@
+//  ------------------------------------
+//  -------- Day 0: Hello, World! --------- 
+//  ------------------------------------  
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/**
+*   A line of code that prints "Hello, World!" on a new line is provided in the editor. 
+*   Write a second line of code that prints the contents of 'parameterVariable' on a new line.
+*
+*	Parameter:
+*   parameterVariable - A string of text.
+**/
+function greeting(parameterVariable) {
+    // This line prints 'Hello, World!' to the console:
+    console.log('Hello, World!');
+    
+    console.log(parameterVariable);
+
+    // Write a line of code that prints parameterVariable to stdout using console.log:
+    
+}
+
+
+
+//  ------------------------------------
+//  -------- Day 0: Data Types --------- 
+//  ------------------------------------   
+
+        
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/**
+*   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
+*   Print three lines:
+*   1. The sum of 'firstInteger' and the Number representation of 'secondInteger'.
+*   2. The sum of 'firstDecimal' and the Number representation of 'secondDecimal'.
+*   3. The concatenation of 'firstString' and 'secondString' ('firstString' must be first).
+*
+*	Parameter(s):
+*   secondInteger - The string representation of an integer.
+*   secondDecimal - The string representation of a floating-point number.
+*   secondString - A string consisting of one or more space-separated words.
+**/
+function performOperation(secondInteger, secondDecimal, secondString) {
+    // Declare a variable named 'firstInteger' and initialize with integer value 4.
+    const firstInteger = 4;
+    
+    // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
+    const firstDecimal = 4.0;
+    
+    // Declare a variable named 'firstString' and initialize with the string "HackerRank".
+    const firstString = 'HackerRank ';
+    
+    console.log(firstInteger + parseInt(secondInteger));
+    
+    // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
+    
+    
+    console.log(firstDecimal + parseFloat(secondDecimal));
+    
+    // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
+    
+    
+    console.log(firstString + secondString);
+    
+    // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
+    
+}
+
+
+//  ------------------------------------
+//  -------- Day 1: Arithmetic Operators --------- 
+//  ------------------------------------   
+
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/**
+*   Calculate the area of a rectangle.
+*
+*   length: The length of the rectangle.
+*   width: The width of the rectangle.
+*   
+*	Return a number denoting the rectangle's area.
+**/
+function getArea(length, width) {
+    let area;
+    // Write your code here
+    
+    area = length*width;
+    
+    return area;
+}
+
+/**
+*   Calculate the perimeter of a rectangle.
+*	
+*	length: The length of the rectangle.
+*   width: The width of the rectangle.
+*   
+*	Return a number denoting the perimeter of a rectangle.
+**/
+function getPerimeter(length, width) {
+    let perimeter;
+    // Write your code here
+    
+    perimeter = 2*(length+width);
+    
+    return perimeter;
+}
+
+
+//  ------------------------------------
+//  -------- Day 1: Functions --------- 
+//  ------------------------------------   
+
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+/*
+ * Create the function factorial here
+ */
+
+function factorial(n){
+    var temp = 1;
+    for(var i=n; i>0; i--){
+        temp = temp*i;
+        
+    }
+    
+    return temp;
+    
+}
+
+
+function main() {
+    const n = +(readLine());
+    
+    console.log(factorial(n));
+}
+
+
+//  ------------------------------------
+//  -------- Day 1: Let and Const --------- 
+//  ------------------------------------   
+
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+function main() {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    var value = readLine();
+    const PI = 3.141592653589793;
+    // Print the area of the circle:
+    var area = PI*value*value;
+    // Print the perimeter of the circle:
+    const perimeter = 2*PI*value;
+    
+     console.log(area);
+     console.log(perimeter);
+
+    try {    
+        // Attempt to redefine the value of constant variable PI
+        PI = 0;
+        // Attempt to print the value of PI
+        console.log(PI);
+    } catch(error) {
+        console.error("You correctly declared 'PI' as a constant.");
+    }
+}
+
+
+
+//  ------------------------------------
+//  -------- Day 2: Conditional Statements: If-Else --------- 
+//  ------------------------------------   
+
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    if (score > 25 && score <= 30) grade = "A";
+    else if (score > 20 && score <= 25) grade = "B";
+    else if (score > 15 && score <= 20) grade = "C";
+    else if (score > 10 && score <= 15) grade = "D";
+    else if (score > 5 && score <= 10) grade = "E";
+    else if (score >= 0 && score <= 5) grade = "F";
+    
+    return grade;
+}
+
+
+function main() {
+    const score = +(readLine());
+    
+    console.log(getGrade(score));
+}
+
+
+
+
+
+//  ------------------------------------
+//  -------- Day 2: Conditional Statements: Switch --------- 
+//  ------------------------------------   
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch (true) {
+        case "aeiou".includes(s[0]):
+            letter = "A"
+            break;
+        case "bcdfg".includes(s[0]):
+            letter = "B"
+            break;
+        case "hjklm".includes(s[0]):
+            letter = "C"
+            break;
+        default:
+            letter = "D"
+            break;
+    }
+    
+    return letter;
+}
+
+
+function main() {
+    const s = readLine();
+    
+    console.log(getLetter(s));
+}
+
+
+//  ------------------------------------
+//  -------- Day 2: Loops --------- 
+//  ------------------------------------   
+
+
+
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+    var str="";
+    for(var i=0; i<s.length; i++){
+        if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u'){
+            console.log(s[i]);
+        }
+        else{
+            str=str+s[i];
+        }
+    }
+    
+    for(var j=0; j<str.length; j++){
+        console.log(str[j]);
+    }
+}
+
+
+//*************************** with forEach()
+// function vowelsAndConsonants(s) {
+//    let nonVowels = "";
+//    [...s].forEach(a => "aeiou".includes(a) ? console.log(a) : nonVowels += a + '\n')
+//    console.log(nonVowels)
+//
+//}
+
+
+//  ------------------------------------
+//  -------- Day 2: Loops --------- 
+//  ------------------------------------   
+
+
+
+
+
