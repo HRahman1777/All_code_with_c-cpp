@@ -7,9 +7,9 @@ int main()
     scanf("%d %d %d", &a, &b, &c);
 
     tmp = a;
-    if(a < b || a < c)
+    if (a < b || a < c)
     {
-        if(b < c)
+        if (b < c)
         {
             tmp = c;
         }
