@@ -1,3 +1,3 @@
 # all_code
 [![time tracker](https://wakatime.com/badge/github/HRahman1777/all_code.svg)](https://wakatime.com/badge/github/HRahman1777/all_code)
-all code (Problem Solving And Several Task) C/C++
+All code of my problem solving and several task with C/C++ 
