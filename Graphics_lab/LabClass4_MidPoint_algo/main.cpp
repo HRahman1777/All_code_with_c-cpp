@@ -25,8 +25,8 @@ void display(void)
             y = y;
             printf("x, y =  %f %f \n", x, y);
             p = p + (2*x) + 3;
-            nX=x+uX;
-            nY=y+uY;
+            //nX=x+uX;
+            //nY=y+uY;
         }
         else
         {
@@ -34,26 +34,35 @@ void display(void)
             y = y - 1;
             printf("x, y = %f %f \n", x, y);
             p = p + (2*x) - (2*y) + 5;
-            nX=x+uX;
-            nY=y+uY;
+            //nX=x+uX;
+            //nY=y+uY;
         }
 
-        glVertex3f( nX, nY, 0);
+        /*
+                glVertex3f( nX, nY, 0);
 
-        glVertex3f( nY, nX, 0);
+                glVertex3f( nY, nX, 0);
 
-        glVertex3f( (-nX), (-nY), 0);
+                glVertex3f( (-nX), (-nY), 0);
 
-        glVertex3f( (-nX), nY, 0);
+                glVertex3f( (-nX), nY, 0);
 
-        glVertex3f( nX,  (-nY), 0);
+                glVertex3f( nX,  (-nY), 0);
 
-        glVertex3f( nY,  (-nX), 0);
+                glVertex3f( nY,  (-nX), 0);
 
-        glVertex3f( (-nY),  (-nX), 0);
+                glVertex3f( (-nY),  (-nX), 0);
 
-        glVertex3f( (-nY),  nX, 0);
-
+                glVertex3f( (-nY),  nX, 0);
+        */
+        glVertex3f(x+uX,y+uY,0);
+        glVertex3f(y+uX,x+uY,0);
+        glVertex3f((-x+uX),(-y+uY),0);
+        glVertex3f((-x+uX),y+uY,0);
+        glVertex3f(x+uX,(-y+uY),0);
+        glVertex3f(y+uX,(-x+uY),0);
+        glVertex3f((-y+uX),(-x+uY),0);
+        glVertex3f((-y+uX),x+uY,0);
 
     }
 

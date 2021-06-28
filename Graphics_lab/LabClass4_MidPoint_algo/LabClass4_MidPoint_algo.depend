@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1624696081 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\labclass4_midpoint_algo\main.cpp
+1624893329 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\labclass4_midpoint_algo\main.cpp
 	<GL/gl.h>
 	<GL/glut.h>
 	<stdio.h>
