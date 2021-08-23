@@ -1,15 +1,10 @@
 # depslib dependency file v1.0
-1624893456 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\labclass4_midpoint_algo\main.cpp
+1629387219 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\project_village\main.cpp
+	<stdio.h>
+	<windows.h>
+	<math.h>
 	<GL/gl.h>
 	<GL/glut.h>
-	<stdio.h>
-
-1228530734 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
-
-1453865572 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-	<windows.h>
-	<GL/gl.h>
-	<GL/glu.h>
 
 1228530732 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
@@ -214,6 +209,16 @@
 
 1228530724 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
+
+1250308678 c:\program files (x86)\codeblocks\mingw\include\math.h
+	<_mingw.h>
+
+1228530734 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
+
+1453865572 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
 
 1228530734 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
 	<stddef.h>

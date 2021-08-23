@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1624893456 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\labclass4_midpoint_algo\main.cpp
-	<GL/gl.h>
+1629137819 source:c:\users\hasibur\documents\code\c and c++\graphics_lab\project_copy_ship_sinking\main.cpp
+	<GLUT/glut.h>
 	<GL/glut.h>
-	<stdio.h>
+	<math.h>
+	<stdlib.h>
 
 1228530734 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
@@ -228,4 +229,7 @@
 1250308682 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
 	<_mingw.h>
 	<stddef.h>
+
+1250308678 c:\program files (x86)\codeblocks\mingw\include\math.h
+	<_mingw.h>
 
