@@ -6,8 +6,8 @@
 
 String apiKey = "NV1EBAXB1ZF6OXP1";
 
-const char *ssid =  "BBSTT";
-const char *pass =  "123456789";
+const char *ssid =  "TP-Link_4F54";
+const char *pass =  "bl4ckh0le";
 const char* server = "api.thingspeak.com";
 
 DHT dht(DHTPIN, DHTTYPE);
