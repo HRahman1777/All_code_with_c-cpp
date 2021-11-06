@@ -4,6 +4,8 @@ using namespace std;
 int maximumToys(vector<int> prices, int k)
 {
     int siz = prices.size();
+    sort(prices.begin(), prices.end());
+    /*
     for (int i = 1; i < siz; i++)
     {
         if (prices[i] < prices[i - 1])
@@ -16,6 +18,7 @@ int maximumToys(vector<int> prices, int k)
             prices[j + 1] = x;
         }
     }
+    */
     int cnt = 0, sum = 0;
     for (int i = 0; i < siz; i++)
     {
