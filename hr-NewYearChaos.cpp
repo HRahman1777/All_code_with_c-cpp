@@ -3,35 +3,27 @@ using namespace std;
 
 void minimumBribes(vector<int> q, int n)
 {
-    int temp, flag = 0, res = 0;
+    int flag = 0, res = 0;
     int i, j;
     vector<int> guard(n + 1);
-    for (i = 0; i < n - 1; i++)
+    for (i = n - 1; i >= 0; i--)
     {
-
-        for (j = 0; j < n - i - 1; j++)
+        if (q[i] - (i + 1) > 2)
         {
-            if (q[j] > q[j + 1])
-            {
-                temp = q[j];
-                q[j] = q[j + 1];
-                q[j + 1] = temp;
-                res++;
-                guard[temp]++;
-            }
+            cout << "Too chaotic\n";
+            return;
         }
-
-        if (guard[q[i]] > 2)
+        int j = i;
+        while (j < n - 1 && q[j] > q[j + 1])
         {
-            flag = 1;
-            break;
+            int temp = q[j];
+            q[j] = q[j + 1];
+            q[j + 1] = temp;
+            j++;
+            res++;
         }
     }
-    if (guard[q[n - 1]] > 2 || flag)
-        cout << "Too chaotic\n";
-
-    else
-        cout << res << "\n";
+    cout << res << "\n";
 }
 
 int main()
