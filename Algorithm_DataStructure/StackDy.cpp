@@ -35,12 +35,17 @@ void pop(Stack *s)
 
 void display(Stack *s)
 {
-    cout << "Stack : ";
-    for (int i = 0; i <= s->top; i++)
+    if (s->top == 0)
+        cout << "Stack is Empty.\n";
+    else
     {
-        cout << s->data[i] << " ";
+        cout << "Stack : ";
+        for (int i = 0; i < s->top; i++)
+        {
+            cout << s->data[i] << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
 }
 
 int main()
