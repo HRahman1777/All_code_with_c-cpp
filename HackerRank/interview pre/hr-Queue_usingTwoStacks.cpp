@@ -7,40 +7,40 @@ typedef struct
 
     void enQueue(int x)
     {
-        if (s1.empty())
+        if (s1.empty() && s2.empty())
         {
             s1.push(x);
         }
         else
         {
-            while (!s1.empty())
-            {
-                s2.push(s1.top());
-                s1.pop();
-            }
-            s1.push(x);
+            s2.push(x);
+        }
+    }
+
+    void deQueue()
+    {
+        if (s1.empty())
+        {
             while (!s2.empty())
             {
                 s1.push(s2.top());
                 s2.pop();
             }
         }
-    }
-
-    void deQueue()
-    {
-        if (!s1.empty())
-        {
-            s1.pop();
-        }
+        s1.pop();
     }
 
     void frontEle()
     {
-        if (!s1.empty())
+        if (s1.empty())
         {
-            cout << s1.top() << "\n";
+            while (!s2.empty())
+            {
+                s1.push(s2.top());
+                s2.pop();
+            }
         }
+        cout << s1.top() << "\n";
     }
 
 } Queue;
