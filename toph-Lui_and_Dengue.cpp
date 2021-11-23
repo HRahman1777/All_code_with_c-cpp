@@ -14,7 +14,9 @@ int main()
         while (ntc--)
         {
             lli a, d, n, res = 0;
+            lli ans, x, y;
             cin >> a >> d >> n;
+            /*
             if (n == 0)
             {
                 cout << a << "\n";
@@ -27,8 +29,11 @@ int main()
                     res += j;
                 }
             }
+            */
+            x = 2 * a + (n - 1) * d;
+            ans = (n * x) / 2;
 
-            cout << res << "\n";
+            cout << ans << "\n";
         }
     }
     return 0;
