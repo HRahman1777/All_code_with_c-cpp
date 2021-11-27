@@ -60,15 +60,15 @@ void divisorCount_opti(lli n)
     }
 
     int count = 1;
-    for (lli i = 1; i < primes.size(); i++)
+    for (lli i = 0; i < primes.size(); i++)
     {
-        if (n % i == 0)
+        if (n % primes[i] == 0)
         {
             int count2 = 1;
-            while (n % i == 0)
+            while (n % primes[i] == 0)
             {
                 count2++;
-                n /= i;
+                n /= primes[i];
             }
             count *= count2;
         }
