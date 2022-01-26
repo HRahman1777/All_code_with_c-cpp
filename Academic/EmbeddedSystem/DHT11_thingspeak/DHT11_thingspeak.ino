@@ -4,10 +4,10 @@
 #define DHTPIN 0
 #define DHTTYPE DHT11
 
-String apiKey = "NV1EBAXB1ZF6OXP1";
+String apiKey = "XXXX";
 
-const char *ssid =  "TP-Link_4F54";
-const char *pass =  "bl4ckh0le";
+const char *ssid =  "XXXX";
+const char *pass =  "XXXX";
 const char* server = "api.thingspeak.com";
 
 DHT dht(DHTPIN, DHTTYPE);
