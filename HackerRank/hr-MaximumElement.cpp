@@ -12,24 +12,31 @@ string rtrim(const string &);
  * The function accepts STRING_ARRAY operations as parameter.
  */
 
+// 5 test cases failed out of 28
 vector<int> getMax(vector<string> operations) {
-    vector<int> tempV, finalV;
+    stack<int> tempV, maxS;
+    maxS.push(-1);
+    vector<int>finalV;
     for (int i=0; i<operations.size(); i++) {
         if (operations[i][0] == '1') {
             int n = stoi(operations[i].substr(2));
-            tempV.push_back(n);
+            tempV.push(n);
+            if (n>maxS.top()) {
+                maxS.push(n);
+            }
         }
         else if (operations[i][0] == '2') {
-            tempV.pop_back();
+            if (tempV.top() == maxS.top()) {
+                maxS.pop();
+            }
+            tempV.pop();
         }
         else if (operations[i][0] == '3') {
-            int m = *max_element(tempV.begin(), tempV.end());
-            finalV.push_back(m);
+            finalV.push_back(maxS.top());
         }
     }
 
     return finalV;
-
 }
 
 int main()
